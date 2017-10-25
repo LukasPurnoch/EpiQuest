@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EpiQuest"
         mc:Ignorable="d"
         Title="EpiQuest" Height="469.608" Width="758.824">
-    <Grid Margin="0,0,1,0" RenderTransformOrigin="0.5,0.5">
+    <Grid Margin="0,0,1,0" RenderTransformOrigin="0.5,0.5"> 
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Kiro\Downloads\dragon_dark_background_patterns_66935_3840x2160.jpg"/>
         </Grid.Background>

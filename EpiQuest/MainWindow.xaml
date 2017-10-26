@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EpiQuest"
         mc:Ignorable="d"
-        Title="EpiQuest" Height="470" Width="760" Icon="Icon1.ico" >
+        Title="EpiQuest" Height="470" Width="760" Icon="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/EQ_Icon.ico" >
 
     <Grid Margin="0,0,1,0" RenderTransformOrigin="0.5,0.5"> 
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Kiro\Downloads\dragon_dark_background_patterns_66935_3840x2160.jpg"/>
+            <ImageBrush ImageSource="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/EpiQuest_MenuBG.jpg"/>
         </Grid.Background>
         <Button Content="NOVÁ HRA" Margin="0,0,0,166" Width="197" Height="60" Click="Button_Click" FontWeight="Bold" FontSize="24" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" Background="Black"/>
         <Button Content="NAČÍST HRU" Margin="0,0,0,106" Width="197" Background="Black" Height="60" Click="Button_Click" FontWeight="Bold" FontSize="24" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black"/>

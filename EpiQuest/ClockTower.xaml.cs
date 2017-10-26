@@ -16,29 +16,13 @@ using System.Windows.Shapes;
 namespace EpiQuest
 {
     /// <summary>
-    /// Interakční logika pro MainWindow.xaml
+    /// Interakční logika pro ClockTower.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ClockTower : Page
     {
-        public MainWindow()
+        public ClockTower()
         {
             InitializeComponent();
-            
-        }
-
-        private void NovaHra(object sender, RoutedEventArgs e)
-        {
-            MENU.Content = new ClockTower();
-        }
-
-        private void NacistHru(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void UkoncitHru(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -24,7 +24,7 @@
          Zde začíná Nielů příběh.
         </TextBlock>
         <Button x:Name="CTNBT1" Content="Pokračovat" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT1_Click" Visibility="Visible"/>
-        <Button x:Name="CTNBT2" Content="Pokračovat" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT1_Click" Visibility="Hidden"/>
-        <Button x:Name="CTNBT3" Content="Začít" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT1_Click" Visibility="Hidden"/>
+        <Button x:Name="CTNBT2" Content="Pokračovat" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT2_Click" Visibility="Hidden"/>
+        <Button x:Name="CTNBT3" Content="Začít" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT3_Click" Visibility="Hidden"/>
     </Grid>
 </Page>

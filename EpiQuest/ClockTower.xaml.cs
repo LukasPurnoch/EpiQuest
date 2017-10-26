@@ -32,11 +32,15 @@ namespace EpiQuest
         {
             TXT1.Visibility = Visibility.Hidden;
             TXT2.Visibility = Visibility.Visible;
+            CTNBT1.Visibility = Visibility.Hidden;
+            CTNBT2.Visibility = Visibility.Visible;
         }
         private void CTNBT2_Click(object sender, RoutedEventArgs e)
         {
             TXT2.Visibility = Visibility.Hidden;
             TXT3.Visibility = Visibility.Visible;
+            CTNBT2.Visibility = Visibility.Hidden;
+            CTNBT3.Visibility = Visibility.Visible;
         }
         private void CTNBT3_Click(object sender, RoutedEventArgs e)
         {

@@ -33,7 +33,7 @@ namespace EpiQuest
 
         private void NacistHru(object sender, RoutedEventArgs e)
         {
-
+            //Zde bude prozatimne bitva pro ucely testovani
         }
 
         private void UkoncitHru(object sender, RoutedEventArgs e)

@@ -5,10 +5,22 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EpiQuest"
       mc:Ignorable="d" 
-      Title="EpiQuest" Height="470" Width="760">
-    <Grid MinWidth="760" MinHeight="469">
+      Title="EpiQuest" MinHeight="715" MinWidth="1050">
+    <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/Clock_Tower.jpg" Stretch="Fill"/>
         </Grid.Background>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FF2B2B2B" Height="185" Width="1050" Foreground="#DD000000" Opacity="0.68"/>
+        <TextBlock x:Name="TXT1" FontSize="27" FontWeight="Bold" Margin="10,0,10,10" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="175" Width="1030" Visibility="Visible">
+         ...Vypravěč:<LineBreak/>Za tmavého a deštivého rána, se Niel probouzí ve své tikající hodinové<LineBreak/>věži a snaží se vstát z postele. Vstane a zapřemýšlí se.
+        </TextBlock>
+        <TextBlock x:Name="TXT2" FontSize="27" FontWeight="Bold" Margin="10,0,10,10" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="175" Width="1030" Visibility="Hidden">
+            ...Niel:<LineBreak/>*Uahh..* Další den v úžasné práci.. Tak co půjdeme vykrást dnes? Nějaká<LineBreak/>denní akce nebo radši noční.. *Ehh* Radši nočn.. Moment! Co říkali v noci strážní?<LineBreak/>
+             Joo.. Ten poklad na okraji ostrova u stok, to zní dobře, půjdu to omrknout.
+        </TextBlock>
+        <TextBlock x:Name="TXT3" FontSize="27" FontWeight="Bold" Margin="10,0,10,10" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="175" Width="1030" Visibility="Hidden">
+         ...Vypravěč:<LineBreak/>Niel slyšel v noci na hlídce stráže, jak se baví o bájném a největším pokladu v<LineBreak/>Soumoří , který je ale hlídán monstry, které ho  k pokladu jen tak nepustí.<LineBreak/>
+         Zde začíná Nielů příběh.
+        </TextBlock>
     </Grid>
 </Page>

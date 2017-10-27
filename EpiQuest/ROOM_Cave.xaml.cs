@@ -16,29 +16,13 @@ using System.Windows.Shapes;
 namespace EpiQuest
 {
     /// <summary>
-    /// Interakční logika pro MainWindow.xaml
+    /// Interakční logika pro ROOM_Cave.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ROOM_Cave : Page
     {
-        public MainWindow()
+        public ROOM_Cave()
         {
             InitializeComponent();
-            
-        }
-
-        private void NovaHra(object sender, RoutedEventArgs e)
-        {
-            MENU1.Content = new ROOM_ClockTower();
-        }
-
-        private void NacistHru(object sender, RoutedEventArgs e)
-        {
-            MENU2.Content = new ROOM_Cave();
-        }
-
-        private void UkoncitHru(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

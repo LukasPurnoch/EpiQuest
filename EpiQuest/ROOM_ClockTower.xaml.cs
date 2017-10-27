@@ -19,9 +19,9 @@ namespace EpiQuest
     /// <summary>
     /// Interakční logika pro ClockTower.xaml
     /// </summary>
-    public partial class ClockTower : Page
+    public partial class ROOM_ClockTower : Page
     {
-        public ClockTower()
+        public ROOM_ClockTower()
         {
             InitializeComponent();
 
@@ -44,7 +44,7 @@ namespace EpiQuest
         }
         private void CTNBT3_Click(object sender, RoutedEventArgs e)
         {
-            //Začátek bitvy
+            STORY.Content = new ROOM_Cave();
         }
     }
 }

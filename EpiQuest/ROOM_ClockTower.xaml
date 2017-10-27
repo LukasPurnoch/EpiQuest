@@ -1,17 +1,16 @@
-﻿<Page x:Class="EpiQuest.ClockTower"
+﻿<Page x:Class="EpiQuest.ROOM_ClockTower"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EpiQuest"
       mc:Ignorable="d" 
-      Title="EpiQuest" MinHeight="715" MinWidth="1050">
+      Title="EpiQuest" MinHeight="715" MinWidth="1280">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/Clock_Tower.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <Label HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FF2B2B2B" Height="185" Width="1050" Foreground="#DD000000" Opacity="0.68"/>
-        
+
         <TextBlock x:Name="TXT1" FontSize="27" FontWeight="Bold" Margin="10,0,10,10" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="175" Width="1030" Visibility="Visible">
          ...Vypravěč:<LineBreak/>Za tmavého a deštivého rána, se Niel probouzí ve své tikající hodinové<LineBreak/>věži a snaží se vstát z postele. Vstane a zapřemýšlí se.
         </TextBlock>
@@ -26,5 +25,6 @@
         <Button x:Name="CTNBT1" Content="Pokračovat" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT1_Click" Visibility="Visible"/>
         <Button x:Name="CTNBT2" Content="Pokračovat" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT2_Click" Visibility="Hidden"/>
         <Button x:Name="CTNBT3" Content="Začít" Margin="937,0,10,153" Background="#FF2B2B2B" BorderBrush="#FF2B2B2B" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="CTNBT3_Click" Visibility="Hidden"/>
+        <Frame x:Name="STORY"/>
     </Grid>
 </Page>

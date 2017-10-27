@@ -63,7 +63,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="ClockTower.xaml">
+    <Compile Include="ROOM_Cave.xaml.cs">
+      <DependentUpon>ROOM_Cave.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ROOM_ClockTower.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -75,13 +78,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ClockTower.xaml.cs">
-      <DependentUpon>ClockTower.xaml</DependentUpon>
+    <Compile Include="ROOM_ClockTower.xaml.cs">
+      <DependentUpon>ROOM_ClockTower.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ROOM_Cave.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -112,6 +119,27 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="EQ_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Thief_CHARACTER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Enemy_Human_Lupic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Enemy_Human_Tezkoodenec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Paper_texture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Stone_texture.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Thief_Miniature_CHARACTER.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EpiQuest"
         mc:Ignorable="d"
-        Title="EpiQuest" Height="715" Width="1280" Icon="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/EQ_Icon.ico" >
+        Title="EpiQuest" Height="730" Width="1280" Icon="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/EQ_Icon.ico" >
 
-    <Grid Margin="0,0,1,0" RenderTransformOrigin="0.5,0.5"> 
-            
+    <Grid Margin="0,0,1,0" RenderTransformOrigin="0.5,0.5">
+
         <Grid.Background>
-                <ImageBrush ImageSource="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/EpiQuest_MenuBG.jpg"/>
+            <ImageBrush ImageSource="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/EpiQuest_MenuBG.jpg"/>
         </Grid.Background>
-        <Button x:Name="NewGame" Content="NOVÁ HRA" Margin="0,0,0,166" Width="197" Height="60" Click="NovaHra" FontWeight="Bold" FontSize="24" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" Background="Black"/>
-        <Button x:Name="LoadGame" Content="NAČÍST HRU" Margin="0,0,0,106" Width="197" Background="Black" Height="60" Click="NacistHru" FontWeight="Bold" FontSize="24" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black"/>
-        <Button x:Name="QuitGame" Content="UKONČIT" Margin="0,0,0,46" Width="197" Background="Black" Height="60" Click="UkoncitHru" FontWeight="Bold" FontSize="24" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black"/>
+        <Button x:Name="NewGame" Content="NOVÁ HRA" Margin="0,0,0,193" Width="407" Height="60" Click="NovaHra" FontWeight="Bold" FontSize="48" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" Background="Black"/>
+        <Button x:Name="LoadGame" Content="NAČÍST HRU" Margin="0,0,0,128" Width="407" Background="Black" Height="60" Click="NacistHru" FontWeight="Bold" FontSize="48" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black"/>
+        <Button x:Name="QuitGame" Content="UKONČIT" Margin="0,0,0,63" Width="407" Background="Black" Height="60" Click="UkoncitHru" FontWeight="Bold" FontSize="48" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black"/>
 
         <Frame x:Name="MENU1"/>
         <Frame x:Name="MENU2"/>

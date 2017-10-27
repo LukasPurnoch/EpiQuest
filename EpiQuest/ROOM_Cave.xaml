@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:EpiQuest"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="EpiQuest" MinHeight="715" MinWidth="1280" Width="Auto" Height="Auto">
+      Title="EpiQuest" MinHeight="730" MinWidth="1280" Width="Auto" Height="Auto">
     <Grid Margin="0,2,0,-2">
         <Grid.Background>
             <ImageBrush x:Name="Background" ImageSource="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/Cave.png" Stretch="Fill"/>
@@ -25,17 +25,20 @@
         <Label x:Name="CurrentHP" Content="280" Margin="69,635,1143,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
         <Label x:Name="MaxHP" Content=" / 280" Margin="118,635,1064,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
 
-        <Button Content="SILNÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,164" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
-        <Button Content="RYCHLÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,95" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
-        <Button Content="NORMÁLNÍ" HorizontalAlignment="Left" Margin="309,0,0,26" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
+        <Button x:Name="Silny_utok" Content="SILNÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,164" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
+        <Button x:Name="Rychly_utok" Content="RYCHLÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,95" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
+        <Button x:Name="Normalni_utok" Content="NORMÁLNÍ" HorizontalAlignment="Left" Margin="309,0,0,26" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
 
-        <Image Margin="0,0,395,122" Source="Enemy_Human_Lupic_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-        <Image Margin="0,0,98,122" Source="Enemy_Human_Tezkoodenec_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image x:Name="EnemyPositionM1" Margin="0,0,395,122" Source="Enemy_Human_Lupic_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image x:Name="EnemyPositionM2" Margin="0,0,98,122" Source="Enemy_Human_Tezkoodenec_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
 
         <Label x:Name="CurrentHPEnemy1" Content="60" Margin="0,0,476,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Label x:Name="MaxHPEnemy1" Content=" / 60" Margin="0,0,395,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Label x:Name="CurrentHPEnemy2" Content="100" Margin="0,0,193,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Label x:Name="MaxHPEnemy2" Content=" / 100" Margin="0,0,98,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+
+        <Button Content="ÚTOK" HorizontalAlignment="Right" Margin="0,0,386,26" VerticalAlignment="Bottom" Width="136" Height="35" Background="#DD363636" BorderBrush="White"/>
+        <Button Content="ÚTOK" HorizontalAlignment="Right" Margin="0,0,98,26" VerticalAlignment="Bottom" Width="136" Height="35" Background="#DD363636" BorderBrush="White"/>
 
 
     </Grid>

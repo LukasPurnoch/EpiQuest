@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EpiQuest"
       mc:Ignorable="d" 
-      Title="EpiQuest" MinHeight="715" MinWidth="1280">
+      Title="EpiQuest" MinHeight="730" MinWidth="1280">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:/Users/Kiro/Source/Repos/EpiQuest/Assets/Clock_Tower.jpg" Stretch="Fill"/>

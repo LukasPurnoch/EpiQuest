@@ -141,5 +141,11 @@
   <ItemGroup>
     <Resource Include="Thief_Miniature_CHARACTER.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Enemy_Human_Lupic_Miniature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Enemy_Human_Tezkoodenec_Miniature.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

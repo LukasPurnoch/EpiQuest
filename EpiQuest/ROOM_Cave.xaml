@@ -25,6 +25,10 @@
         <Label x:Name="CurrentHP" Content="180" Margin="69,635,1143,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
         <Label x:Name="MaxHP" Content=" / 280" Margin="118,635,1064,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
 
+        <Button Content="SILNÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,164" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
+        <Button Content="RYCHLÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,95" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
+        <Button Content="NORMÁLNÍ" HorizontalAlignment="Left" Margin="309,0,0,26" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White"/>
+
 
     </Grid>
 </Page>

@@ -39,7 +39,6 @@ namespace EpiQuest
 
             SkrytUtoky();
 
-            
         }
 
         public void SkrytUtoky()
@@ -82,12 +81,14 @@ namespace EpiQuest
                     HP_Lupic1 -= DMG_RychlyUtok1;
                 }
             }
-            else
+            if (HitChance_RychlyUtok1 >=81)
             {
                 DMGInfo_Pos1.Content = "Vedle";
             }
-
-            
+            if (HitChance_RychlyUtok1 >= 81 && HP_Bojovnik1 <= 0 || HP_Tezkoodenec1 <= 0 || HP_Lupic1 <= 0)
+            {
+                DMGInfo_Pos1.Content = "";
+            }
         }
         public void RychlyUtok2()
         {
@@ -110,9 +111,13 @@ namespace EpiQuest
                     HP_Lupic2 -= DMG_RychlyUtok2;
                 }
             }
-            else
+            if (HitChance_RychlyUtok2 >= 81)
             {
                 DMGInfo_Pos2.Content = "Vedle";
+            }
+            if (HitChance_RychlyUtok2 >= 81 && HP_Bojovnik2 <= 0 || HP_Tezkoodenec2 <= 0 || HP_Lupic2 <= 0)
+            {
+                DMGInfo_Pos2.Content = "";
             }
 
 
@@ -138,9 +143,13 @@ namespace EpiQuest
                     HP_Lupic1 -= DMG_SilnyUtok1;
                 }
             }
-            else
+            if (HitChance_SilnyUtok1 >= 31)
             {
                 DMGInfo_Pos1.Content = "Vedle";
+            }
+            if (HitChance_SilnyUtok1 >= 31 && HP_Bojovnik1 <= 0 || HP_Tezkoodenec1 <= 0 || HP_Lupic1 <= 0)
+            {
+                DMGInfo_Pos1.Content = "";
             }
         }
         public void SilnyUtok2()
@@ -164,14 +173,18 @@ namespace EpiQuest
                     HP_Lupic2 -= DMG_SilnyUtok2;
                 }
             }
-            else
+            if (HitChance_SilnyUtok2 >= 31)
             {
                 DMGInfo_Pos2.Content = "Vedle";
+            }
+            if (HitChance_SilnyUtok2 >= 31 && HP_Bojovnik2 <= 0 || HP_Tezkoodenec2 <= 0 || HP_Lupic2 <= 0)
+            {
+                DMGInfo_Pos2.Content = "";
             }
         }
         public void NormalniUtok1()
         {
-            Random NormalniUtok1_HitChance = new Random(); // Normální útok -> 855% Chance, 14-19 DMG
+            Random NormalniUtok1_HitChance = new Random(); // Normální útok -> 55% Chance, 14-19 DMG
             Random NormalniUtok1_DMG = new Random();
             int HitChance_NormalniUtok1 = NormalniUtok1_HitChance.Next(1, 101);
             int DMG_NormalniUtok1 = NormalniUtok1_DMG.Next(14, 20);
@@ -190,14 +203,18 @@ namespace EpiQuest
                     HP_Lupic1 -= DMG_NormalniUtok1;
                 }
             }
-            else
+            if (HitChance_NormalniUtok1 >= 56)
             {
                 DMGInfo_Pos1.Content = "Vedle";
+            }
+            if (HitChance_NormalniUtok1 >= 56 && HP_Bojovnik1 <= 0 || HP_Tezkoodenec1 <= 0 || HP_Lupic1 <= 0)
+            {
+                DMGInfo_Pos1.Content = "";
             }
         }
         public void NormalniUtok2()
         {
-            Random NormalniUtok2_HitChance = new Random(); // Normální útok -> 855% Chance, 14-19 DMG
+            Random NormalniUtok2_HitChance = new Random(); // Normální útok -> 55% Chance, 14-19 DMG
             Random NormalniUtok2_DMG = new Random();
             int HitChance_NormalniUtok2 = NormalniUtok2_HitChance.Next(1, 101);
             int DMG_NormalniUtok2 = NormalniUtok2_DMG.Next(14, 20);
@@ -216,9 +233,13 @@ namespace EpiQuest
                     HP_Lupic2 -= DMG_NormalniUtok2;
                 }
             }
-            else
+            if (HitChance_NormalniUtok2 >= 56)
             {
                 DMGInfo_Pos2.Content = "Vedle";
+            }
+            if (HitChance_NormalniUtok2 >= 56 && HP_Bojovnik2 <= 0 || HP_Tezkoodenec2 <= 0 || HP_Lupic2 <= 0)
+            {
+                DMGInfo_Pos2.Content = "";
             }
         }
 
@@ -257,6 +278,41 @@ namespace EpiQuest
                 Enemy1Attack.Visibility = Visibility.Hidden;
             }
         }
+        public void Bojovnik2()
+        {
+            Random Bojovnik_HitChance2 = new Random(); // Normální útok -> 55% Chance, 14-19 DMG
+            Random Bojovnik_DMG2 = new Random();
+            int HitChance_Bojovnik2 = Bojovnik_HitChance2.Next(1, 101);
+            int DMG_Bojovnik2 = Bojovnik_DMG2.Next(14, 20);
+
+
+            if (HP_Bojovnik2 > 0)
+            {
+                if (HitChance_Bojovnik2 <= 55)
+                {
+                    //Zasah za DMG_Bojovnik
+                    if (int.TryParse(CurrentHP.Content.ToString(), out int Thief_HP))
+                    {
+                        Thief_HP -= DMG_Bojovnik2;
+                        CurrentHP.Content = Thief_HP;
+                        DMGInfo_Thief.Content = DMG_Bojovnik2;
+                    }
+                }
+                else
+                {
+                    //Vedle
+                    DMGInfo_Thief.Content = "Vedle";
+                }
+            }
+            if (HP_Bojovnik2 <= 0)
+            {
+                Enemy2.Visibility = Visibility.Hidden;
+                EnemyPositionM2.Visibility = Visibility.Hidden;
+                CurrentHPEnemy2.Visibility = Visibility.Hidden;
+                MaxHPEnemy2.Visibility = Visibility.Hidden;
+                Enemy2Attack.Visibility = Visibility.Hidden;
+            }
+        }
         public void Tezkoodenec1()
         {
             Random Tezkoodenec_HitChance1 = new Random(); // Silný útok -> 30% Chance, 25-30 DMG
@@ -289,6 +345,41 @@ namespace EpiQuest
                 CurrentHPEnemy1.Visibility = Visibility.Hidden;
                 MaxHPEnemy1.Visibility = Visibility.Hidden;
                 Enemy1Attack.Visibility = Visibility.Hidden;
+            }
+
+        }
+        public void Tezkoodenec2()
+        {
+            Random Tezkoodenec_HitChance2 = new Random(); // Silný útok -> 30% Chance, 25-30 DMG
+            Random Tezkoodenec_DMG2 = new Random();
+            int HitChance_Tezkoodenec2 = Tezkoodenec_HitChance2.Next(1, 101);
+            int DMG_Tezkoodenec2 = Tezkoodenec_DMG2.Next(25, 31);
+
+            if (HP_Tezkoodenec2 > 0)
+            {
+                if (HitChance_Tezkoodenec2 <= 30)
+                {
+                    //Zasah za DMG_Bojovnik
+                    if (int.TryParse(CurrentHP.Content.ToString(), out int Thief_HP))
+                    {
+                        Thief_HP -= DMG_Tezkoodenec2;
+                        CurrentHP.Content = Thief_HP;
+                        DMGInfo_Thief.Content = DMG_Tezkoodenec2;
+                    }
+                }
+                else
+                {
+                    //Vedle
+                    DMGInfo_Thief.Content = "Vedle";
+                }
+            }
+            if (HP_Tezkoodenec2 <= 0)
+            {
+                Enemy2.Visibility = Visibility.Hidden;
+                EnemyPositionM2.Visibility = Visibility.Hidden;
+                CurrentHPEnemy2.Visibility = Visibility.Hidden;
+                MaxHPEnemy2.Visibility = Visibility.Hidden;
+                Enemy2Attack.Visibility = Visibility.Hidden;
             }
 
         }
@@ -327,6 +418,41 @@ namespace EpiQuest
             }
 
         }
+        public void Lupic2()
+        {
+            Random Lupic_HitChance2 = new Random(); // Rychlý útok -> 80% Chance, 8-13 DMG
+            Random Lupic_DMG2 = new Random();
+            int HitChance_Lupic2 = Lupic_HitChance2.Next(1, 101);
+            int DMG_Lupic2 = Lupic_DMG2.Next(8, 14);
+
+            if (HP_Lupic2 > 0)
+            {
+                if (HitChance_Lupic2 <= 80)
+                {
+                    //Zasah za DMG_Bojovnik
+                    if (int.TryParse(CurrentHP.Content.ToString(), out int Thief_HP))
+                    {
+                        Thief_HP -= DMG_Lupic2;
+                        CurrentHP.Content = Thief_HP;
+                        DMGInfo_Thief.Content = DMG_Lupic2;
+                    }
+                }
+                else
+                {
+                    //Vedle
+                    DMGInfo_Thief.Content = "Vedle";
+                }
+            }
+            if (HP_Lupic2 <= 0)
+            {
+                Enemy2.Visibility = Visibility.Hidden;
+                EnemyPositionM2.Visibility = Visibility.Hidden;
+                CurrentHPEnemy2.Visibility = Visibility.Hidden;
+                MaxHPEnemy2.Visibility = Visibility.Hidden;
+                Enemy2Attack.Visibility = Visibility.Hidden;
+            }
+
+        }
 
         private void Enemy1Attack_Click(object sender, RoutedEventArgs e)
         {
@@ -348,7 +474,8 @@ namespace EpiQuest
             }
             else
             {
-                //RychlyUtok2();
+                RychlyUtok2();
+                Tezkoodenec2();
             }
         }
         private void Silny_utok_Click(object sender, RoutedEventArgs e)
@@ -360,7 +487,8 @@ namespace EpiQuest
             }
             else
             {
-                //SilnyUtok2();
+                SilnyUtok2();
+                Tezkoodenec2();
             }
         }
         private void Normalni_utok_Click(object sender, RoutedEventArgs e)
@@ -372,7 +500,8 @@ namespace EpiQuest
             }
             else
             {
-                //NormalniUtok2();
+                NormalniUtok2();
+                Tezkoodenec2();
             }
         }
     }

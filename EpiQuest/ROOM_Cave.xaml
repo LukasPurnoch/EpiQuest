@@ -40,6 +40,6 @@
         <Button Content="ÚTOK" HorizontalAlignment="Right" Margin="0,0,386,26" VerticalAlignment="Bottom" Width="136" Height="35" Background="#DD363636" BorderBrush="White"/>
         <Button Content="ÚTOK" HorizontalAlignment="Right" Margin="0,0,98,26" VerticalAlignment="Bottom" Width="136" Height="35" Background="#DD363636" BorderBrush="White"/>
 
-
+        <Label x:Name="DMGInfo_Thief" Content="" FontSize="72" FontFamily="Bernard MT Condensed" Margin="136,26,923,616" HorizontalAlignment="Center" Width="221" Foreground="#DDC30D0D"/>
     </Grid>
 </Page>
